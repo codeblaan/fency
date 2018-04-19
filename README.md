@@ -5,7 +5,7 @@ convenient to have separate from all your tabs.
 
 ![login](https://raw.githubusercontent.com/codeblaan/fency/master/login.gif)
 
-## To Develop
+## Run dev build
 
 ```bash
 # Install dependencies
@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 
-## Build binary app
+## Release build
 
 ```bash
 # Install dependencies
