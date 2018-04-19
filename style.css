@@ -1,0 +1,22 @@
+html,body {
+  margin: 0;
+}
+
+header {
+  background-color: #9E9E9E;
+  position: fixed;
+  top:0;
+  height: 1px;
+  width: 100%;
+}
+
+section {
+  position: fixed;
+  top:1px;
+  bottom:0;
+  width: 100%;
+}
+
+webview {
+  height: 100%;
+}
