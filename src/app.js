@@ -40,6 +40,8 @@ function createMenu() {
     submenu: [
       { label: 'About Fency', selector: 'orderFrontStandardAboutPanel:' },
       { type: 'separator' },
+      { label: 'Hide', accelerator: 'Command+H', selector: 'hide:' },
+      { type: 'separator' },
       { label: 'Quit', accelerator: 'Command+Q', click: () => app.quit() }
     ]}, {
       label: 'File',
