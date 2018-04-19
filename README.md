@@ -3,6 +3,8 @@ Just gmail.com inside of an electron browser window. Since gmail is in a
 separate app, it can't track and ad target you as easily, and it's
 convenient to have separate from all your tabs.
 
+![login](https://raw.githubusercontent.com/codeblaan/fency/master/login.gif)
+
 ## To Develop
 
 ```bash
