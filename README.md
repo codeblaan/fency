@@ -1,4 +1,7 @@
 # Fency
+Just gmail.com inside of an electron browser window. Since gmail is in a
+separate app, it can't track and ad target you as easily, and it's
+convenient to have separate from all your tabs.
 
 ## To Develop
 
