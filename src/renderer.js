@@ -4,8 +4,7 @@
 
 let webview = document.querySelector('webview');
 
-webview.src = 'https://www.gmail.com/'
-webview.useragent = 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko)'
+webview.src = 'https://mail.google.com/mail/mu/mp/40/'
 webview.autosize = true 
 webview.minwidth = '300'
 webview.minheight = '600'
