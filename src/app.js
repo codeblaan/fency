@@ -4,11 +4,8 @@ const {
   Menu,
   session
 } = require('electron')
-
 const path = require('path')
-
 const url = require('url')
-
 const DEBUG = false
 
 let mainWindow
@@ -46,7 +43,7 @@ function createMenu() {
     ]}, {
       label: 'File',
       submenu: [
-        { label: 'Clear Session', click: session.defaultSession.clearStorageData([], () => {}) }
+        { label: 'Clear Session', click: () => session.defaultSession.clearStorageData([], () => {}) }
       ]
     }, {
       label: 'Edit',
