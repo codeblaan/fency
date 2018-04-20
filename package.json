@@ -1,18 +1,20 @@
 {
   "name": "fency",
   "productName": "Fency",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "put up a fence for your protection",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "./node_modules/.bin/electron-packager . --overwrite --platform=darwin --icon=assets/icon.icns --arch=x64 --prune=true --out=release-builds"
+    "build": "electron-packager . --overwrite --platform=darwin --icon=assets/icon.icns --arch=x64 --prune=true --out=release-builds",
+    "release": "./release.sh"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "author": "blaan",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4",
-    "electron-packager": "^12.0.1"
+    "electron-packager": "^12.0.1",
+    "json": "^9.0.6"
   }
 }
