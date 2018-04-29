@@ -1,7 +1,7 @@
 {
   "name": "fency",
   "productName": "Fency",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "put up a fence for your protection",
   "main": "main.js",
   "scripts": {
