@@ -14,13 +14,19 @@ npm install
 npm start
 ```
 
-## Release build
+## Build a binary
 
 ```bash
 # Install dependencies
 npm install
 # Run the app
 npm run-script build
+```
+
+## Build a binary ready for uploading
+```bash
+npm run release -- $VERSION
+# e.g. npm run release -- 1.0.2
 ```
 
 ## Resources for Learning Electron

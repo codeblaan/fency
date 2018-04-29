@@ -23,4 +23,7 @@ hdiutil create \
   -srcfolder release-builds/$DIR/ \
   release-builds/$DIR.dmg
 zip -r release-builds/$DIR.dmg.zip release-builds/$DIR.dmg
-open release-builds/
+cd release-builds/
+shasum -a 256 $DIR.dmg.zip > $DIR.dmg.zip.sha256
+shasum -c $DIR.dmg.zip.sha256
+open .
