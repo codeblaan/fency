@@ -13,7 +13,7 @@ webview.addEventListener('new-window', openLinkInDefaultBrowser);
 
 function openLinkInDefaultBrowser(e) {
   try {
-    if (['http:', 'https:', 'mailto:'].indexOf(require('url').parse(e.url).protocol) < 0 ) {
+    if (['http:', 'https:'].indexOf(require('url').parse(e.url).protocol) < 0 ) {
       throw new Error('Invalid protocol')
     }
     require('electron').shell.openExternal(e.url);
@@ -21,3 +21,19 @@ function openLinkInDefaultBrowser(e) {
     console.warn('Error opening external link', e);
   }
 }
+
+webview.addEventListener('dom-ready', function(){
+  //webview.openDevTools();
+  webview.insertCSS(`
+    *:focus {
+      outline: none !important;
+    }
+    `)
+  webview.executeJavaScript(`
+    window.onload = () => {
+      document.getElementById('nav').remove()
+    }
+    `, () => {
+      console.log('loaded js')
+    })
+});

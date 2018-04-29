@@ -43,6 +43,8 @@ function createMenu() {
     ]}, {
       label: 'File',
       submenu: [
+        { label: 'Reload', accelerator: 'Command+R', click: () => mainWindow.reload() },
+        { type: 'separator' },
         { label: 'Clear Session', click: () => session.defaultSession.clearStorageData([], () => {}) }
       ]
     }, {
