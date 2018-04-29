@@ -20,10 +20,10 @@ npm start
 # Install dependencies
 npm install
 # Run the app
-npm run-script build
+npm run build
 ```
 
-## Build a binary ready for uploading
+## Package up for release
 ```bash
 npm run release -- $VERSION
 # e.g. npm run release -- 1.0.2
